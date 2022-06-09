@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".tarihiMevlana">
+
+    <ImageView
+        android:id="@+id/imageMevlana"
+        android:layout_width="411dp"
+        android:layout_height="263dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvMevlana"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mevlana_muzesi_768x401"
+        tools:srcCompat="@drawable/mevlana_muzesi_768x401" />
+
+    <RatingBar
+        android:id="@+id/ratingMevlana"
+        android:layout_width="244dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="20dp"
+        android:max="5"
+        android:stepSize="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonKaydetMevlana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMevlanaBilgi" />
+
+    <TextView
+        android:id="@+id/tvMevlanaUcret"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="10dp"
+        android:text="Giriş Ücreti: 0 TL"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvMevlanaSaat"
+        app:layout_constraintEnd_toStartOf="@+id/tvMevlanaOy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMevlana" />
+
+    <TextView
+        android:id="@+id/tvMevlanaSaat"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Açılış Kapanış Saati: 09:00-17:00"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvMevlanaBilgi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMevlanaUcret" />
+
+    <TextView
+        android:id="@+id/tvMevlanaOy"
+        android:layout_width="148dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Kullanıcı Oyları: 5/5"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvMevlanaSaat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvMevlanaUcret"
+        app:layout_constraintTop_toBottomOf="@+id/tvMevlana" />
+
+    <Button
+        android:id="@+id/buttonKaydetMevlana"
+        android:layout_width="118dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="oy ver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ratingMevlana"
+        app:layout_constraintTop_toBottomOf="@+id/tvMevlanaBilgi" />
+
+    <TextView
+        android:id="@+id/tvMevlanaBilgi"
+        android:layout_width="0dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Sizi ney sesiyle buyur eden, hoşgörü kelimesini dünyaya tanıtan Hz. Mevlana’nın Dergahı, Konya’da görmeniz gereken en önemli yerlerden biridir. 1926 yılından bu yana müze olarak da hizmet veren bu huzur verici mekanı ziyaret listenizde ilk sıralara koymalısınız."
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingMevlana"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMevlanaSaat" />
+
+    <TextView
+        android:id="@+id/tvMevlana"
+        android:layout_width="384dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="MEVLANA MÜZESİ"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvMevlanaUcret"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMevlana" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

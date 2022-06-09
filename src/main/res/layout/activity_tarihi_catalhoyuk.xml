@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".tarihi_catalhoyuk">
+
+    <ImageView
+        android:id="@+id/imageCatalhoyuk"
+        android:layout_width="411dp"
+        android:layout_height="263dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvCatalhoyuk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/thumbs_b_c_f427c9cfe457378696b82775d276208a"
+        tools:srcCompat="@drawable/thumbs_b_c_f427c9cfe457378696b82775d276208a" />
+
+    <RatingBar
+        android:id="@+id/ratingCatalhoyuk"
+        android:stepSize="1"
+        android:max="5"
+        android:layout_width="244dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonKaydetCatalhoyuk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCatalhoyukBilgi" />
+
+    <TextView
+        android:id="@+id/tvCatalhoyukUcret"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="10dp"
+        android:text="Giriş Ücreti: 0 TL"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvCatalhoyukSaat"
+        app:layout_constraintEnd_toStartOf="@+id/tvCatalhoyukOy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCatalhoyuk" />
+
+    <TextView
+        android:id="@+id/tvCatalhoyukSaat"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Açılış Kapanış Saati: 09:00-17:00"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvCatalhoyukBilgi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCatalhoyukUcret" />
+
+    <TextView
+        android:id="@+id/tvCatalhoyukOy"
+        android:layout_width="148dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Kullanıcı Oyları: 4.5/5"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvCatalhoyukSaat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvCatalhoyukUcret"
+        app:layout_constraintTop_toBottomOf="@+id/tvCatalhoyuk" />
+
+    <Button
+        android:id="@+id/buttonKaydetCatalhoyuk"
+        android:layout_width="118dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="oy ver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ratingCatalhoyuk"
+        app:layout_constraintTop_toBottomOf="@+id/tvCatalhoyukBilgi" />
+
+    <TextView
+        android:id="@+id/tvCatalhoyukBilgi"
+        android:layout_width="0dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Konya’nın Çumra ilçesi sınırlarında yer  alan Çatalhöyük, ilçe merkezine de 10 kilometre kadar mesafede. Burası yükseltili yapısının neden olduğu görüntü nedeniyle “çatal” olarak anılıyor. Burası tüm dünya tarafından, insanlık tarihine ışık tutan bir antik yerleşim olarak kabul görüyor. "
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingCatalhoyuk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCatalhoyukSaat" />
+
+    <TextView
+        android:id="@+id/tvCatalhoyuk"
+        android:layout_width="384dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="ÇATALHÖYÜK ANTİK KENTİ"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvCatalhoyukUcret"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCatalhoyuk" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

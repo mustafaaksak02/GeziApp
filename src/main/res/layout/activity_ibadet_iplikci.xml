@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ibadet_iplikci">
+
+    <ImageView
+        android:id="@+id/imageiplikci"
+        android:layout_width="411dp"
+        android:layout_height="263dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tviplikci"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iplikciesim_001"
+        tools:srcCompat="@drawable/iplikciesim_001" />
+
+    <RatingBar
+        android:id="@+id/ratingiplikci"
+        android:stepSize="1"
+        android:max="5"
+        android:layout_width="244dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonKaydetiplikci"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tviplikciBilgi" />
+
+    <TextView
+        android:id="@+id/tviplikciUcret"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tviplikciSaat"
+        app:layout_constraintEnd_toStartOf="@+id/tviplikciOy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tviplikci" />
+
+    <TextView
+        android:id="@+id/tviplikciSaat"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tviplikciBilgi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tviplikciUcret" />
+
+    <TextView
+        android:id="@+id/tviplikciOy"
+        android:layout_width="148dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Kullanıcı Oyları: 5/5"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tviplikciSaat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tviplikciUcret"
+        app:layout_constraintTop_toBottomOf="@+id/tviplikci" />
+
+    <Button
+        android:id="@+id/buttonKaydetiplikci"
+        android:layout_width="118dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="oy ver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ratingiplikci"
+        app:layout_constraintTop_toBottomOf="@+id/tviplikciBilgi" />
+
+    <TextView
+        android:id="@+id/tviplikciBilgi"
+        android:layout_width="0dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Caminin şadırvanında 8 adet mermer sütun var. Şadırvan inşa edilirken öyle bir geometri ve mühendislik gözetilmiş ki; ses farklı bir biçimde yankılanıyor. Şadırvan tasarımında abdest alanları ve ibadet edenleri rahatsız etmeme düşüncesiyle, son derece incelikle hareket edilmiş."
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingiplikci"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tviplikciSaat" />
+
+    <TextView
+        android:id="@+id/tviplikci"
+        android:layout_width="384dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="İPLİKÇİ CAMİİ"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tviplikciUcret"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageiplikci" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

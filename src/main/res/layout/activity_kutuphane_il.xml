@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".kutuphane_il">
+
+    <ImageView
+        android:id="@+id/imageil"
+        android:layout_width="411dp"
+        android:layout_height="263dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/konya_il_halk_kutuphanesi_1138290"
+        tools:srcCompat="@drawable/konya_il_halk_kutuphanesi_1138290" />
+
+    <RatingBar
+        android:id="@+id/ratingil"
+        android:stepSize="1"
+        android:max="5"
+        android:layout_width="244dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonKaydetil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvilBilgi" />
+
+    <TextView
+        android:id="@+id/tvilUcret"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="10dp"
+        android:text="Giriş Ücreti: 0 TL"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvilSaat"
+        app:layout_constraintEnd_toStartOf="@+id/tvilOy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvil" />
+
+    <TextView
+        android:id="@+id/tvilSaat"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Açılış Kapanış Saati: 08:00-23:00"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvilBilgi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvilUcret" />
+
+    <TextView
+        android:id="@+id/tvilOy"
+        android:layout_width="148dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Kullanıcı Oyları: 4.5/5"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvilSaat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvilUcret"
+        app:layout_constraintTop_toBottomOf="@+id/tvil" />
+
+    <Button
+        android:id="@+id/buttonKaydetil"
+        android:layout_width="118dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="oy ver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ratingil"
+        app:layout_constraintTop_toBottomOf="@+id/tvilBilgi" />
+
+    <TextView
+        android:id="@+id/tvilBilgi"
+        android:layout_width="0dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Halk kütüphanesi ilk defa “Milli Kütüphane adı ile 1910 yılında Konya Valisi Muammer Bey’in öncülüğü ile eski Rehberi Hürriyet Okulu içinde bir binada kurulmuştur."
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvilSaat" />
+
+    <TextView
+        android:id="@+id/tvil"
+        android:layout_width="384dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="KONYA İL HALK KÜTÜPHANESİ"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvilUcret"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageil" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

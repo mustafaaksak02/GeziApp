@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mustafaaksak.geziapp">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GeziApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".otoparkZindan"
+            android:exported="false" />
+        <activity
+            android:name=".ibadet_iplikci"
+            android:exported="false" />
+        <activity
+            android:name=".marketKule"
+            android:exported="false" />
+        <activity
+            android:name=".otel_ibis"
+            android:exported="false" />
+        <activity
+            android:name=".tarihi_catalhoyuk"
+            android:exported="false" />
+        <activity
+            android:name=".tarihi_mevlana"
+            android:exported="false" />
+        <activity
+            android:name=".kutuphane_yazma"
+            android:exported="false" />
+        <activity
+            android:name=".tarihiMevlana"
+            android:exported="false" />
+        <activity
+            android:name=".kutuphane_il"
+            android:exported="false" />
+        <activity
+            android:name=".parkAkyokus"
+            android:exported="false" />
+        <activity
+            android:name=".parkYildiz"
+            android:exported="false" />
+        <activity
+            android:name=".parkBaraj"
+            android:exported="false" />
+        <activity
+            android:name=".parkEcdad"
+            android:exported="false" />
+        <activity
+            android:name=".parkJapon"
+            android:exported="false" />
+        <activity
+            android:name=".parkKelebek"
+            android:exported="false" />
+        <activity
+            android:name=".parkSeksen"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityOtopark"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityIbadet"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMarket"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityOtel"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityTarihi"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityKutuphaneler"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityParklar"
+            android:exported="false" />
+        <activity
+            android:name=".MainAnasayfa"
+            android:exported="false" />
+        <activity
+            android:name=".MainKayitOl"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

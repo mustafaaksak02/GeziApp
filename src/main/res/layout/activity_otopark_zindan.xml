@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".otoparkZindan">
+
+    <ImageView
+        android:id="@+id/imageZindan"
+        android:layout_width="411dp"
+        android:layout_height="263dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvZindan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/indir"
+        tools:srcCompat="@drawable/indir" />
+
+    <RatingBar
+        android:id="@+id/ratingZindan"
+        android:stepSize="1"
+        android:max="5"
+        android:layout_width="244dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonKaydetZindan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvZindanBilgi" />
+
+    <TextView
+        android:id="@+id/tvZindanUcret"
+        android:layout_width="164dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="10dp"
+        android:text="Giriş Ücreti: Saatlik 3TL"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvZindanSaat"
+        app:layout_constraintEnd_toStartOf="@+id/tvZindanOy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvZindan" />
+
+    <TextView
+        android:id="@+id/tvZindanSaat"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvZindanBilgi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvZindanUcret" />
+
+    <TextView
+        android:id="@+id/tvZindanOy"
+        android:layout_width="148dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Kullanıcı Oyları: 3.5/5"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvZindanSaat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvZindanUcret"
+        app:layout_constraintTop_toBottomOf="@+id/tvZindan" />
+
+    <Button
+        android:id="@+id/buttonKaydetZindan"
+        android:layout_width="118dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="oy ver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ratingZindan"
+        app:layout_constraintTop_toBottomOf="@+id/tvZindanBilgi" />
+
+    <TextView
+        android:id="@+id/tvZindanBilgi"
+        android:layout_width="0dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Adres: Beyazıt, Derviş Hilmi Sk. No:2, 42060 Selçuklu/Konya Telefon: (0332) 321 62 57"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingZindan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvZindanSaat" />
+
+    <TextView
+        android:id="@+id/tvZindan"
+        android:layout_width="384dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="ZİNDANKALE KATLI OTOPARKI"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvZindanUcret"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageZindan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".marketKule">
+
+    <ImageView
+        android:id="@+id/imageKule"
+        android:layout_width="411dp"
+        android:layout_height="263dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvKule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/konya_kulesite_avm_yilda_11_milyon_ziyaretci_agirliyor_53607_c9608"
+        tools:srcCompat="@drawable/konya_kulesite_avm_yilda_11_milyon_ziyaretci_agirliyor_53607_c9608" />
+
+    <RatingBar
+        android:id="@+id/ratingKule"
+        android:stepSize="1"
+        android:max="5"
+        android:layout_width="244dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonKaydetKule"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKuleBilgi" />
+
+    <TextView
+        android:id="@+id/tvKuleUcret"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvKuleSaat"
+        app:layout_constraintEnd_toStartOf="@+id/tvKuleOy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKule" />
+
+    <TextView
+        android:id="@+id/tvKuleSaat"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Açılış Kapanış Saati: 10:00-22:00"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvKuleBilgi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKuleUcret" />
+
+    <TextView
+        android:id="@+id/tvKuleOy"
+        android:layout_width="148dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Kullanıcı Oyları: 4.5/5"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvKuleSaat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvKuleUcret"
+        app:layout_constraintTop_toBottomOf="@+id/tvKule" />
+
+    <Button
+        android:id="@+id/buttonKaydetKule"
+        android:layout_width="118dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="oy ver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ratingKule"
+        app:layout_constraintTop_toBottomOf="@+id/tvKuleBilgi" />
+
+    <TextView
+        android:id="@+id/tvKuleBilgi"
+        android:layout_width="0dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="2004 yılında hizmete girmiştir. Kulesite avm, 130 markası ile Konya`nın önde gelen Alışveriş merkezlerindendir. Kulesite Alışveriş ve Eğlence Merkezi`nin hafta sonlarında da 45 bin kişi ziyaret etmektedir."
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingKule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKuleSaat" />
+
+    <TextView
+        android:id="@+id/tvKule"
+        android:layout_width="384dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="KULE SİTE AVM"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvKuleUcret"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageKule" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".otel_ibis">
+
+    <ImageView
+        android:id="@+id/imageibis"
+        android:layout_width="411dp"
+        android:layout_height="263dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvibis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/c6dd4898_z"
+        tools:srcCompat="@drawable/c6dd4898_z" />
+
+    <RatingBar
+        android:id="@+id/ratingibis"
+        android:stepSize="1"
+        android:max="5"
+        android:layout_width="244dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonKaydetibis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvibisBilgi" />
+
+    <TextView
+        android:id="@+id/tvibisUcret"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvibisSaat"
+        app:layout_constraintEnd_toStartOf="@+id/tvibisOy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvibis" />
+
+    <TextView
+        android:id="@+id/tvibisSaat"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Açılış Kapanış Saati: 7/24"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvibisBilgi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvibisUcret" />
+
+    <TextView
+        android:id="@+id/tvibisOy"
+        android:layout_width="148dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Kullanıcı Oyları: 4/5"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvibisSaat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvibisUcret"
+        app:layout_constraintTop_toBottomOf="@+id/tvibis" />
+
+    <Button
+        android:id="@+id/buttonKaydetibis"
+        android:layout_width="118dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="oy ver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ratingibis"
+        app:layout_constraintTop_toBottomOf="@+id/tvibisBilgi" />
+
+    <TextView
+        android:id="@+id/tvibisBilgi"
+        android:layout_width="0dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text=" Otel, konforlu yataklara sahip 130 modern ve davetkar oda sunmaktadır. Restoranında iyi ve sağlıklı bir yemeğin tadını çıkarın. 7/24 resepsiyon. Otel genelinde ücretsiz wifi. Sabah 7'den itibaren sıcak ve açık büfe kahvaltı seçimi. Site içi ücretsiz otopark."
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingibis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvibisSaat" />
+
+    <TextView
+        android:id="@+id/tvibis"
+        android:layout_width="384dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="İBİS OTEL KONYA"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvibisUcret"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageibis" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

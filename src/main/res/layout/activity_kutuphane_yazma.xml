@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".kutuphane_yazma">
+
+    <ImageView
+        android:id="@+id/imageYazma"
+        android:layout_width="411dp"
+        android:layout_height="263dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvYazma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kolm"
+        tools:srcCompat="@drawable/kolm" />
+
+    <RatingBar
+        android:id="@+id/ratingYazma"
+        android:stepSize="1"
+        android:max="5"
+        android:layout_width="244dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonKaydetYazma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvYazmaBilgi" />
+
+    <TextView
+        android:id="@+id/tvYazmaUcret"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="10dp"
+        android:text="Giriş Ücreti: 0 TL"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvYazmaSaat"
+        app:layout_constraintEnd_toStartOf="@+id/tvYazmaOy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvYazma" />
+
+    <TextView
+        android:id="@+id/tvYazmaSaat"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Açılış Kapanış Saati: 08:00-17:00"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvYazmaBilgi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvYazmaUcret" />
+
+    <TextView
+        android:id="@+id/tvYazmaOy"
+        android:layout_width="148dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Kullanıcı Oyları: 4/5"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvYazmaSaat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvYazmaUcret"
+        app:layout_constraintTop_toBottomOf="@+id/tvYazma" />
+
+    <Button
+        android:id="@+id/buttonKaydetYazma"
+        android:layout_width="118dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="oy ver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ratingYazma"
+        app:layout_constraintTop_toBottomOf="@+id/tvYazmaBilgi" />
+
+    <TextView
+        android:id="@+id/tvYazmaBilgi"
+        android:layout_width="0dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Türkiye'nin çeşitli kütüphanelerinde bulunan yazma koleksiyonlarını bir araya toplamak, bakım ve onarımlarını yapmak için 1984 yılında Kültür ve Turizm Bakanlığı tarafından oluşturulmuş olan kütüphane. Bünyesinde 101 farklı yazma ve nadir eser koleksiyonunu barındırmaktadır."
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingYazma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvYazmaSaat" />
+
+    <TextView
+        android:id="@+id/tvYazma"
+        android:layout_width="384dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="YAZMA ESERLER KÜTÜPHANESİ"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvYazmaUcret"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageYazma" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

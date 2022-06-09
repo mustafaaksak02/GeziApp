@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".parkKelebek">
+
+    <ImageView
+        android:id="@+id/imageKelebek"
+        android:layout_width="411dp"
+        android:layout_height="263dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvKelebek"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/konya_tropikal_kelebek_bah_esi_2"
+        tools:srcCompat="@drawable/konya_tropikal_kelebek_bah_esi_2" />
+
+    <RatingBar
+        android:id="@+id/ratingKelebek"
+        android:stepSize="1"
+        android:max="5"
+        android:layout_width="244dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonKaydetKelebek"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKelebekBilgi" />
+
+    <TextView
+        android:id="@+id/tvKelebekUcret"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="10dp"
+        android:text="Giriş Ücreti: 15 TL"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvKelebekSaat"
+        app:layout_constraintEnd_toStartOf="@+id/tvKelebekOy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKelebek" />
+
+    <TextView
+        android:id="@+id/tvKelebekSaat"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Açılış Kapanış Saati: 09:00-17:00"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvKelebekBilgi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKelebekUcret" />
+
+    <TextView
+        android:id="@+id/tvKelebekOy"
+        android:layout_width="148dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Kullanıcı Oyları: 4/5"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvKelebekSaat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvKelebekUcret"
+        app:layout_constraintTop_toBottomOf="@+id/tvKelebek" />
+
+    <Button
+        android:id="@+id/buttonKaydetKelebek"
+        android:layout_width="118dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="oy ver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ratingKelebek"
+        app:layout_constraintTop_toBottomOf="@+id/tvKelebekBilgi" />
+
+    <TextView
+        android:id="@+id/tvKelebekBilgi"
+        android:layout_width="0dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Konya Tropikal Kelebek Bahçesi, 2015 yılının temmuz ayında hizmete sunuldu. 15 türden fazla, binin üzerinde kelebek uçuş alanı olarak tasarlanan bu özel bahçe Avrupa'nın en büyük tropikal kelebek bahçesi unvanına sahip, ülkemizin de tek kelebek bahçesidir."
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingKelebek"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKelebekSaat" />
+
+    <TextView
+        android:id="@+id/tvKelebek"
+        android:layout_width="384dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="KONYA TROPİKAL KELEBEK BAHÇESİ"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvKelebekUcret"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageKelebek" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
