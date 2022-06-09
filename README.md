@@ -30,8 +30,12 @@ Marketler İbadet Yerleri ve Otoparklar GIF'i
 
 
 
-[Ekran görüntüsü 2022-06-09 183158](https://user-images.githubusercontent.com/104034505/172888116-a96e2c9e-b75c-44c8-ae23-5f939d6b43a0.png)
+
 Veritabanından Örnek Görüntü
+![Ekran görüntüsü 2022-06-09 183158](https://user-images.githubusercontent.com/104034505/172899100-98fe6896-1a3d-4582-a660-eeb1ad10e469.png)
+
+
+
 
 Uygulamamız Kotlin Programlama Dilinde Yazılmıştır
 
